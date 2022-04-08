@@ -1,0 +1,14 @@
+编写bat文件
+python main.py
+
+
+
+
+如何隐藏控制台并让Python运行
+
+@echo off
+if "%1" == "h" goto begin
+mshta vbscript:createobject("wscript.shell").run("%~nx0 h",0)(window.close)&&exit
+:begin
+call conda activate dl
+python main.py
