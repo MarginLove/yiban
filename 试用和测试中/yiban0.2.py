@@ -20,8 +20,8 @@ class Main:
         #pyautogui.hotkey('f11')
     #登陆易班进入首页
     def loginModel(self):
-        self.browser.find_element_by_id("account-txt").send_keys('15016429998')
-        self.browser.find_element_by_id("password-txt").send_keys('Margin77')
+        self.browser.find_element_by_id("account-txt").send_keys('17376579036')
+        self.browser.find_element_by_id("password-txt").send_keys('qq13931975931')
         self.browser.find_element_by_id("login-btn").click()
         sleep(3)
         try:
