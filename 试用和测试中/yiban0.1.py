@@ -7,8 +7,8 @@ driver=webdriver.Edge()
 driver.get(r'https://www.yiban.cn/login')
 time.sleep(2)
 pyautogui.hotkey('f11')
-driver.find_element_by_id("account-txt").send_keys('17806702715')#账号
-driver.find_element_by_id("password-txt").send_keys('jy020103')#密码
+driver.find_element_by_id("account-txt").send_keys('')#账号
+driver.find_element_by_id("password-txt").send_keys('')#密码
 driver.find_element_by_id("login-btn").click()
 time.sleep(2)
 
@@ -83,10 +83,10 @@ pyautogui.alert(text='一天的网薪涮完了', title='python脚本运行状况
 # pyautogui.moveTo(1525,45), pyautogui.click(1525,45)
 # time.sleep(1)
 # pyautogui.moveTo(1031,391), pyautogui.click(1031,391)
-# pyautogui.typewrite('')
+# pyautogui.typewrite('')#账号
 # time.sleep(1)
 # pyautogui.moveTo(1047,465), pyautogui.click(1047,465)
-# pyautogui.typewrite('')
+# pyautogui.typewrite('')#密码
 #
 # time.sleep(1)
 # pyautogui.moveTo(1210,614), pyautogui.click(1210,614)
