@@ -10,6 +10,7 @@ class Main:
     def initWebkit(self):
         self.browser = Edge()#指向使用Edge
         self.browser.get('https://www.yiban.cn/login')
+        self.browser.minimize_window()
     # 登陆易班进入首页
     def loginModel(self):
         #登录账号
@@ -105,7 +106,7 @@ if __name__ == '__main__':
     # m.publishBlogModel()  # 发布话题
     # m.pulishTrendsModel()  # 发布评论
     # m.changeInformationModel() #点赞
-    # m.self.quit()#关闭所有关联窗口，并且安全关闭session。
+    # m.browser.quit()#关闭所有关联窗口，并且安全关闭session。
 pyautogui.alert(text='一天的网薪涮完了', title='python脚本运行状况')
 
 
