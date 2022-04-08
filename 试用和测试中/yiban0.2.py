@@ -13,9 +13,9 @@ class Main:
     # 登陆易班进入首页
     def loginModel(self):
         #登录账号
-        username = '17376579036'
+        username = ''
         #密码
-        password = 'qq13931975931'
+        password = ''
         self.browser.find_element(By.ID, "account-txt").send_keys(username)
         self.browser.find_element(By.ID, "password-txt").send_keys(password)
         self.browser.find_element(By.ID, "login-btn").click()
