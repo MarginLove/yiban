@@ -14,8 +14,8 @@ def login():
     # 定位登录元素、并点击
     browser.find_element(By.XPATH, '//nav/div/div[2]/aside/span/a[2]').click()
     # 账号、密码
-    account = '17376579036'
-    password = 'qq13931975931'
+    account = ''
+    password = ''
     # 定位账号元素
     browser.find_element(By.XPATH, '//main/div/div[2]/ul/li/div/input').send_keys(account)
     # 定位密码元素
