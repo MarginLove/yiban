@@ -10,7 +10,7 @@ class Main:
     def initWebkit(self):
         self.browser = Edge()#指向使用Edge
         self.browser.get('https://www.yiban.cn/login')
-        self.browser.minimize_window()
+        #self.browser.minimize_window()#会导致点赞识别不了
     # 登陆易班进入首页
     def loginModel(self):
         #登录账号
@@ -33,7 +33,8 @@ class Main:
             WebDriverWait(self.browser, 20, 0.5).until_not(EC.presence_of_element_located((By.ID, 'tool-newbie')))
             self.browser.find_element(By.ID, "tool-sign").click()
             WebDriverWait(self.browser, 3, 0.5).until(EC.visibility_of_element_located((By.ID, 'sign-survey')))
-            self.browser.find_element_by_xpath("//div[@id='sign-survey']/dl/dd[1]/i").click()
+            #self.browser.find_element_by_xpath("//div[@id='sign-survey']/dl/dd[1]/i").click()#老式写法
+            self.browser.find_element(By.XPATH,"//div[@id='sign-survey']/dl/dd[1]/i").click()
             self.browser.find_element(By.CSS_SELECTOR, ".dialog-confirm").click()
         except:
             print('第一个签到完成')
