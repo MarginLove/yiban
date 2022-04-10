@@ -103,10 +103,10 @@ if __name__ == '__main__':
     m.initWebkit()  # 打开浏览器
     m.loginModel()  # 登陆易班
     m.signInModel()  # 签到
-    m.signInModel2()    #签到2
-    m.publishBlogModel()  # 发布话题
-    m.pulishTrendsModel()  # 发布评论
-    m.changeInformationModel() #点赞
+#     m.signInModel2()    #签到2
+#     m.publishBlogModel()  # 发布话题
+#     m.pulishTrendsModel()  # 发布评论
+#     m.changeInformationModel() #点赞
     m.browser.quit()#关闭所有关联窗口，并且安全关闭session。
 pyautogui.alert(text='一天的网薪涮完了', title='python脚本运行状况')
 
